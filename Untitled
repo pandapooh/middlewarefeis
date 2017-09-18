@@ -1,0 +1,18 @@
+curl \
+ -F "object_id=337841683307941" \
+ -F "object=page" \
+ -F "field=message" \
+ -F 'custom_fields={"quiero obtener un credito"}' \
+ -F "access_token=EAAMrv1juaiwBAIuuA9Fx7FH4ZAgWob5Tbpn2877AOXQrrXHjrS6HXVckU1KFCUdnTQYfhYFh5A9qDqD2ll2SeZA5ZCl13Q5s0ZCjfBNzDhbSmzp2Fe3QUzqat3ZCOYo5w85genRzYhFfzFZBQMS7vNKGZCZASPE4syhZBatgBIakeJwZDZD" \
+ "https://859e5f9b.ngrok.io/facebook/receive"
+
+
+
+ curl -X POST -H "Content-Type: application/json" -d '{
+   "recipient": {
+     "id": "337841683307941"
+   },
+   "message": {
+     "text": "quiero obtener un credito"
+   }
+ }' "https://graph.facebook.com/v2.6/me/messages?access_token=EAAMrv1juaiwBAIuuA9Fx7FH4ZAgWob5Tbpn2877AOXQrrXHjrS6HXVckU1KFCUdnTQYfhYFh5A9qDqD2ll2SeZA5ZCl13Q5s0ZCjfBNzDhbSmzp2Fe3QUzqat3ZCOYo5w85genRzYhFfzFZBQMS7vNKGZCZASPE4syhZBatgBIakeJwZDZD"
